@@ -1,9 +1,10 @@
-import {allBlogs} from '@/.contentlayer/generated';
+import HomeCoverSection from "@/src/components/Home/HomeCoverSection";
+import { allBlogs } from "@/.contentlayer/generated";
 
 export default function Home() {
   return (
     <main className="flex flex-col items-center justify-center">
-      Hello world!
+      <HomeCoverSection blogs={allBlogs} />
     </main>
   )
 }

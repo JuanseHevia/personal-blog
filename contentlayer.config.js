@@ -21,7 +21,7 @@ const Blog = defineDocumentType(() => ({
             required: true
         },
         image: {
-            type: 'string',
+            type: 'image',
             required: true
         },
         // Used for filtering published blogs or soft deleting
@@ -29,9 +29,8 @@ const Blog = defineDocumentType(() => ({
             type: 'boolean',
             required: true
         },
-        authors: {
-            type: 'list',
-            of: { type: 'string' },
+        author: {
+            type: 'string',
             required: true
         },
         tags: {
@@ -54,4 +53,5 @@ export default makeSource({
     /* options */
     contentDirPath: 'content',
     documentTypes: [Blog],
+  //  disableImportAliasWarning: true, // NOTE: might want to remove this in production
 })
