@@ -5,7 +5,6 @@ export const GitHubLogo = ({className, ...rest}) => (
     xmlns="http://www.w3.org/2000/svg"
     width={42}
     height={44}
-    fill="none"
     viewBox="0 0 42 44"
     {...rest}
     className={cx(className, "w-full h-auto")}
