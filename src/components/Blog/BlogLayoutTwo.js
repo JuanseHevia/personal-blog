@@ -21,7 +21,7 @@ const BlogLayoutTwo = ({ blog }) => {
             </Link>
             <div className='col-span-8 w-full'>
                 <span className='uppercase text-accent font-semibold text-sm'>{blog.tags[0]}</span>
-                <Link href={`/blogs/${blog.url}`} className='inline-block my-1'>
+                <Link href={blog.url} className='inline-block my-1'>
                     <h2 className='text-lg font-semibold capitalize'>
                         <span className='bg-gradient-to-r
                                              from-accent/50 to-accent/50 bg-[length:0px_6px]

@@ -20,7 +20,7 @@ const BlogLayoutOne = ({ blog }) => {
             <div className='w-full absolute bottom-0 p-10 z-20 text-light'>
                 <Tag link={`/categories/${blog.tags[0]}`} name={blog.tags[0]}
                         className='px-6 text-sm py-2 !border' />
-                <Link href={`/blogs/${blog.url}`} className='mt-6'>
+                <Link href={blog.url} className='mt-6'>
                     <h2 className='text-2xl font-bold mt-4'>
                         <span className='bg-gradient-to-r
                                              from-accent to-accent bg-[length:0px_6px]

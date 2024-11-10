@@ -21,7 +21,7 @@ const HomeCoverSection = ({ blogs }) => {
                 />
                 <div className='w-3/4 p-16 flex flex-col items-start justify-center z-0 text-light'>
                     <Tag link={`/categories/${lastBlog.tags[0]}`} name={lastBlog.tags[0]} />
-                    <Link href={`/blogs/${lastBlog.url}`}>
+                    <Link href={lastBlog.url}>
                         <h1 className='text-5xl font-bold'>
                             <span className='bg-gradient-to-r
                                              from-accent to-accent bg-[length:0px_6px]
